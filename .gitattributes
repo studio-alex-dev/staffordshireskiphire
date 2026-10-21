@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Preserve the generated JavaScript byte-for-byte.
+_worker.js -text
+migration/forms.js -text
