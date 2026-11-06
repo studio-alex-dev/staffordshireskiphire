@@ -2,7 +2,11 @@ const SETTINGS = {"productionHost":"www.staffordshireskiphire.com","mode":"produ
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    const preview = SETTINGS.mode !== 'production' || url.host !== SETTINGS.productionHost;
+    // Studio Alex 2026-11-06: send the bare domain to the www production host instead of serving a noindex preview copy.
+    if (SETTINGS.mode === 'production' && url.host === SETTINGS.productionHost.replace(/^www\./, '')) {
+      return Response.redirect(`https://${SETTINGS.productionHost}${url.pathname}${url.search}`, 301);
+    }
+    const preview =SETTINGS.mode !== 'production' || url.host !== SETTINGS.productionHost;
     const protect = response => {
       const headers = new Headers(response.headers);
       headers.set('X-Content-Type-Options', 'nosniff');
