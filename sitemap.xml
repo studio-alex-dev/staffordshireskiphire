@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<sitemap>
+		<loc>https://www.staffordshireskiphire.com/services/sitemap-misc.xml</loc>
+		<lastmod>2023-09-21T16:12:38+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://www.staffordshireskiphire.com/services/post-sitemap.xml</loc>
+		<lastmod>2022-09-21T10:06:26+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://www.staffordshireskiphire.com/services/page-sitemap.xml</loc>
+		<lastmod>2022-09-26T11:00:33+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://www.staffordshireskiphire.com/areas-covered/sitemap-misc.xml</loc>
+		<lastmod>2026-01-23T09:37:02+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://www.staffordshireskiphire.com/areas-covered/page-sitemap.xml</loc>
+		<lastmod>2026-01-23T09:37:02+00:00</lastmod>
+	</sitemap>
+</sitemapindex>
